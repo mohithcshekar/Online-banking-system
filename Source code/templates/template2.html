@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Central bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/line-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/material-icons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/simple-line-icons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/fontawesome5-overrides.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Contact-Form-Clean.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Footer-Basic.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Footer-Dark.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Login-Form-Dark.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Registration-Form-with-Photo.cs') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Social-Icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/untitled.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="index.html">THE CENTRAL BANK OF INDIA</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home&nbsp;&nbsp;<i class="fa fa-home"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">Locate Branch&nbsp;&nbsp;<i class="fa fa-map-pin"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.google.com/maps/search/central+bank">Contact US&nbsp; &nbsp;<i class="fa fa-phone"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://en.wikipedia.org/wiki/Central_Bank_of_India" target="_blank">About Us  <i class="fa fa-question"></i></a></li>
+                </ul>
+        </div><a class="btn" data-bs-hover-animate="shake" type="button" style="background-color: rgb(255,14,14);width: 110px;margin-right: -12px;color: #ffffff;height: 42px;" href="logout">Log out</a></div>
+    </nav>
+    
+    {% block log %}
+
+
+    {% endblock %}
+    <div class="footer-dark">
+        <div class="text-left contact-info portfolio-info-card" style="width: 470px;display: inline-block;">
+            <h2>Contact Info</h2>
+            <div class="row">
+                <div class="col-1"><i class="icon ion-person icon"></i></div>
+                <div class="col-9"><span>Customer care at Central Bank Of&nbsp; India</span></div>
+            </div>
+            <div class="row">
+                <div class="col-1"><i class="icon ion-ios-telephone icon"></i></div>
+                <div class="col-9"><span>0821 3217 424</span></div>
+            </div>
+            <div class="row">
+                <div class="col-1"><i class="icon ion-at icon"></i></div>
+                <div class="col-9"><span>care@centralbank.com</span></div>
+            </div>
+        </div>
+        <p style="width: 720px;"><br><i class="fa fa-warning"></i>&nbsp; IMPORTANT: Central Bank of India never ask for your user id / password / pin no. through phone call / SMSes / e-mails. Any such phone call / SMSes / e-mails asking you to reveal credential or One Time Password
+            through SMS could be attempt to withdraw money from your account<br><br></p>
+        <footer></footer>
+        <p><br><i class="fab fa-weebly"></i>&nbsp; Site best viewed in IE10+, Firefox 47+, Chrome 55+, Safari 5.0+ at 1024 X 768 pixels resolution.<br><br><i class="fa fa-warning"></i>&nbsp; Please do not believe any entity using Axis Bank logos &amp; branding
+            to request the public for money in exchange for opening a Customer Service Point.<br><br><i class="fa fa-phone"></i>&nbsp; &nbsp;Always use the&nbsp; Customer care numbers displayed on Bank’s official website. Do not access unknown website
+            links.<a href="https://rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=21110">RBI: Beware of Fictitious Offers/Lottery Winnings/Cheap Fund Offers.</a><br><br></p>
+    </div>
+    <script src="{{ url_for('static', filename ='assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename ='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename ='assets/js/theme.js') }}"></script>
+    <script src="{{ url_for('static', filename ='assets/js/bs-init.js') }}"></script>
+    <script src="{{ url_for('static', filename ='assets/js/pikaday.min.js') }}"></script>
+</body>
+
+</html>

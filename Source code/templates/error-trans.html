@@ -1,0 +1,27 @@
+{% extends "template2.html" %}
+{% block log %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="border: 0px;padding-top: 40px;padding-bottom: 0px;height: 130px;margin-top: 34px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 class="text-center" style="margin-bottom: 0px;margin-top: 0px;height: 76px;color: rgb(164,8,8);">&nbsp;failed !!!</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <p class="text-center" style="display: block;font-size: 25px;margin-bottom: 100px;">Due to following reason: {{ error_msg }}<br></p>
+    </div>
+    <div style="height: 277px;margin-top: 18px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 text-center" style="height: 181px;margin-left: 197px;">
+                    <p class="text-center" style="font-size: 20px;height: 109px;"><i class="la la-users" style="font-size: 40px;margin-bottom: 10px;"></i><br>Click here to navigate to dashboard<br><br></p><a class="btn btn-primary text-center" role="button" style="margin-left: 0px;margin-top: 0px;width: 153px;"
+                        href="customer-dashboard.html">Dashboard</a></div>
+                <div class="col-md-4 text-center">
+                    <p class="text-center" style="font-size: 20px;height: 109px;"><i class="icon-logout" style="font-size: 40px;margin-bottom: 10px;"></i><br>Click here to log out from your account<br><br><br></p><a class="btn btn-primary text-center" role="button" style="margin-left: 0px;margin-top: -10px;width: 153px;"
+                        href="index.html">Log out</a></div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

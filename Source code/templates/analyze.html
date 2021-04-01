@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/line-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/material-icons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/simple-line-icons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/fontawesome5-overrides.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Contact-Form-Clean.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Footer-Basic.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Footer-Dark.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Login-Form-Dark.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Registration-Form-with-Photo.cs') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Social-Icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/untitled.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/typicons.min.css') }}">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </script>
+    <script type = "text/javascript">
+       google.charts.load('current', {packages: ['corechart']});     
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="index.html">THE CENTRAL BANK OF INDIA</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home&nbsp;&nbsp;<i class="fa fa-home"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">Locate Branch&nbsp;&nbsp;<i class="fa fa-map-pin"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="cv.html">Contact US&nbsp; &nbsp;<i class="fa fa-phone"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://en.wikipedia.org/wiki/Central_Bank_of_India" target="_blank">About Us  <i class="fa fa-question"></i></a></li>
+                </ul>
+        </div><button class="btn" data-bs-hover-animate="shake" type="button" style="background-color: rgb(255,14,14);width: 110px;margin-right: -12px;color: #ffffff;height: 42px;">Log out</button></div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">Bank&nbsp;<strong>manager&nbsp;</strong>analytics page</h2>
+                </div>
+            </div>
+            <div style="height: 570px;/*border: 4px solid #8ed2ff;*/margin-bottom: 50px;">
+                <div style="border: 4px solid #8ed2ff;display: inline-block;width: 730px;height: 520px;margin-left: 20px;margin-right: 20px;">
+                    <div id = "container" style = "width: 720px; height: 510px; margin: 0px 0px 0px 0px ; padding: 0px">
+                    </div>
+                    <script language = "JavaScript">
+                       function drawChart() {
+                          // Define the chart to be drawn.
+                          var data = google.visualization.arrayToDataTable([
+                            ['date', 'amount'],
+                             ['{{ x1[0][0] }}',  {{ y1[0] }}],
+                             ['{{ x1[1][0] }}',  {{ y1[1] }}],
+                             ['{{ x1[2][0] }}',  {{ y1[2] }}],
+                             ['{{ x1[3][0] }}',  {{ y1[3] }}],
+                            ['{{ x1[4][0] }}',  {{ y1[4] }}] 
+                             
+                          ]);
+              
+                          var options = {title: 'Transactions per day',
+                          titleTextStyle: {
+                            fontSize:25,
+                            fontName: 'Lato,sans-serif'
+                          }}; 
+              
+                          // Instantiate and draw the chart.
+                          var chart = new google.visualization.BarChart(document.getElementById('container'));
+                          chart.draw(data, options);
+                       }
+                       google.charts.setOnLoadCallback(drawChart);
+                    </script>
+                </div>
+                <div style="border: 4px solid #8ed2ff;display: inline-block;width: 730px;height: 520px;margin-right: 10px;">
+                    
+                    <div id = "container1" style = "width: 720px; height: 510px; margin: 0px 0px 0px 0px">
+                    </div>
+                    <script language = "JavaScript">
+                       function drawChart() {
+                          // Define the chart to be drawn.
+                          var data = google.visualization.arrayToDataTable([
+                             ['Range of Amt', 'No. of trans'],
+                             ["1-499",  {{ p1 }}],
+                             ["500-1000", {{ p2 }} ],
+                             ["1000-2000", {{ p3 }} ],
+                             ["2000-5000", {{ p4 }} ],
+                             [">5000", {{ p5 }} ]
+                          ]);
+              
+                          var options = {title: '   Ranges of transactions',
+                          titleTextStyle: {
+                            fontSize:25,
+                            fontName: 'Lato,sans-serif'
+                          }
+                        }; 
+                        
+              
+                          // Instantiate and draw the chart.
+                          var chart = new google.visualization.BarChart(document.getElementById('container1'));
+                          chart.draw(data, options);
+                       }
+                       google.charts.setOnLoadCallback(drawChart);
+                    </script>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div style="border: 2px solid #8ed2ff;" >
+        <div class="container" >
+            <form method="post">
+            <div class="row">
+                <div class="col-md-12" style="margin-bottom: 30px;border: 2px solid #8ed2ff;margin-top: 20px;height: 60px;padding-top: 10px;"><label style="border: 2px;font-size: 20px;width: 600px;">Click here to list all the account with customer in your branch :&nbsp;</label><input class="btn btn-primary" type="submit" style="width: 171px;margin-left: 330px;" name="b1" value="All accounts"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="margin-bottom: 30px;padding-right: 0px;height: 60px;font-size: 20px;border: 2px solid #8ed2ff;padding-top: 7px;"><label style="width: 600px;margin-bottom: 8px;">Filter based on the amount of money in account :&nbsp;</label><input type="text" style="margin-top: 0px;padding-bottom: 0px;margin-bottom: 0px;margin-right: 100px;" placeholder="Amount in RS"
+                        name="f_amt"><input class="btn btn-primary" type="submit" style="width: 171px;margin-left: 0px;"  name="b2"  value="Filter list"><br></div>
+                <div class="col-md-12" style="margin-bottom: 30px;border: 2px solid #8ed2ff;font-size: 20px;height: 60px;padding: 0px;padding-top: 10px;padding-left: 15px;"><label style="width: 600px;">Filter based on the account number in accounts :&nbsp;</label><input type="text" style="margin-top: 0px;margin-right: 100px;padding-left: 0px;padding-bottom: 0px;" placeholder="ACC NO" name="f_acc">
+                    <input 
+                        class="btn btn-primary" type="submit" style="margin-left: 0px;width: 171px;"  name="b3" value="Filter account">
+                </div>
+                <div class="col-md-12" style="margin-bottom: 30px;font-size: 20px;border: 2px solid #8ed2ff;height: 60px;padding-top: 10px;"><label style="width: 600px;">Information on specific transaction :&nbsp;</label><input type="text" style="margin-top: 0px;margin-right: 100px;" placeholder="Transaction ID" name="f_trans"><input class="btn btn-primary" type="submit" style="margin-left: 0px;width: 171px;"  name="b4"  value="Specific transaction"></div>
+                <div
+                    class="col-md-12" style="margin-bottom: 30px;height: 60px;font-size: 20px;border: 2px solid #8ed2ff;padding-top: 10px;"><label style="width: 600px;margin-left: 2px;">Filter transactions from date&nbsp; &nbsp;:&nbsp; &nbsp;<input type="datetime-local" name="f_fdate" style="width: 250px;border: 2px solid #8ed2ff;">&nbsp; &nbsp; to&nbsp;</label><input type="datetime-local"
+                        style="margin-top: 0px;margin-bottom: 0px;margin-right: 100px;width: 250px;margin-left: -26px;border: 2px solid #8ed2ff;" name="f_tdate"><input class="btn btn-primary" type="submit" style="margin-left: 0px;width: 171px;"  name="b5"  value="Filter transactions">
+            </div>
+        </form>
+        </div>
+     </div>
+    </div>
+    <div class="footer-dark">
+        <div class="text-left contact-info portfolio-info-card" style="width: 470px;display: inline-block;">
+            <h2>Contact Info</h2>
+            <div class="row">
+                <div class="col-1"><i class="icon ion-person icon"></i></div>
+                <div class="col-9"><span>Customer care at Central Bank Of&nbsp; India</span></div>
+            </div>
+            <div class="row">
+                <div class="col-1"><i class="icon ion-ios-telephone icon"></i></div>
+                <div class="col-9"><span>0821 3217 424</span></div>
+            </div>
+            <div class="row">
+                <div class="col-1"><i class="icon ion-at icon"></i></div>
+                <div class="col-9"><span>care@centralbank.com</span></div>
+            </div>
+        </div>
+        <p style="width: 720px;"><br><i class="fa fa-warning"></i>&nbsp; IMPORTANT: Central Bank of India never ask for your user id / password / pin no. through phone call or SMSes / e-mails. Any such phone call / SMSes / e-mails asking you to reveal credential or One Time Password
+            through SMS could be attempt to withdraw money from your account<br><br></p>
+        <footer></footer>
+        <p><br><i class="fab fa-weebly"></i>&nbsp; Site best viewed in IE10+, Firefox 47+, Chrome 55+, Safari 5.0+ at 1024 X 768 pixels resolution.<br><br><i class="fa fa-warning"></i>&nbsp; Please do not believe any entity using Axis Bank logos &amp; branding
+            to request the public for money in exchange for opening a Customer Service Point.<br><br><i class="fa fa-phone"></i>&nbsp; &nbsp;Always use the&nbsp; Customer care numbers displayed on Bank’s official website. Do not access unknown website
+            links.<a href="https://rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=21110">RBI: Beware of Fictitious Offers/Lottery Winnings/Cheap Fund Offers.</a><br><br></p>
+    </div>
+    <script src="{{ url_for('static', filename ='assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename ='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename ='assets/js/theme.js') }}"></script>
+    <script src="{{ url_for('static', filename ='assets/js/bs-init.js') }}"></script>
+    <script src="{{ url_for('static', filename ='assets/js/pikaday.min.js') }}"></script>
+</body>
+
+</html>

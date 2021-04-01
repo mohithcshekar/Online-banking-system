@@ -1,0 +1,39 @@
+{% extends "template2.html" %}
+{% block log %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">ALL ACCOUNTS DETAILS OF YOUR BRANCH<br></h2>
+                </div>
+            </div>
+            <div class="table-responsive" style="margin: 20px;margin-bottom: 100px;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-center" style="padding: 0px;padding-bottom: 12px;width: 242px;padding-top: 12px;">Customer ID</th>
+                            <th class="text-center" style="padding: 0px;padding-bottom: 12px;width: 242px;">First name</th>
+                            <th class="text-center" style="padding: 0px;padding-bottom: 12px;width: 242px;">Last name</th>
+                            <th class="text-center" style="padding: 0px;padding-bottom: 12px;width: 242px;">Mobile number</th>
+                            <th class="text-center" style="padding: 0px;padding-bottom: 12px;width: 242px;">Acc No</th>
+                            <th class="text-center" style="padding: 0px;padding-bottom: 12px;width: 242px;">Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for cu in cus %}
+                        <tr>
+                            <td class="text-center">{{ cu[0] }}</td>
+                            <td class="text-center">{{ cu[1] }}</td>
+                            <td class="text-center">{{ cu[2] }}</td>
+                            <td class="text-center">{{ cu[3] }}</td>
+                            <td class="text-center">{{ cu[4] }}</td>
+                            <td class="text-center">{{ cu[5] }}</td>
+                        </tr>
+                        {% endfor %}
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    {% endblock %}

@@ -1,0 +1,18 @@
+{% extends "template2.html" %}
+{% block log %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">Register new employee (teller)</h2>
+                </div>
+            </div>
+            <div class="container">
+                <form method="post"><label>Name of the employee</label><input class="form-control" type="text" style="margin-bottom: 30px;" name="emp_name"><label>Unique employee ID</label><input class="form-control" type="text" style="margin-bottom: 30px;" name="emp_id"><label>Bank Email ID</label>
+                    <input
+                        class="form-control" type="text" style="margin-bottom: 30px;" name="email"><label>Temproary password</label><input class="form-control" type="password" style="margin-bottom: 30px;" name="passwd"><label><br></label><label>Branch code</label><input class="form-control" type="text" style="margin-bottom: 30px;"
+                            name="br_code"><input class="btn btn-primary" role="button" type="submit" style="width: 150px;margin-left: 208px;color: #ffff;" value="Create account"></form>
+            </div>
+        </section>
+    </main>
+    {% endblock %}

@@ -1,0 +1,19 @@
+{% extends "template2.html" %}
+{% block log %}
+
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">Employee dashboard-passbook/statement entry</h2>
+                </div>
+            </div>
+            <form method="post" style="width: 375px;margin-bottom: 100px;">
+                <h2 class="sr-only">Login Form</h2><label class="text-center" style="width: 268px;margin-bottom: 31px;font-size: 20px;">Enter the account number</label>
+                <header></header>
+                <div class="form-group"><input class="form-control" type="text" name="acc_no" placeholder="Account number"></div>
+                <div class="form-group"><input class="btn btn-primary btn-block" role="button" type="submit" href="statements.html" style="margin-bottom: 1px;"value="Extract"></div>
+            </form>
+        </section>
+    </main>
+    {% endblock %}

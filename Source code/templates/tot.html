@@ -1,0 +1,22 @@
+{% extends "template2.html" %}
+{% block log %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;margin-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">select&nbsp; the&nbsp; type of transaction</h2>
+                </div>
+            </div>
+            <form method="post" style="width: 375px;margin-bottom: 140px;">
+                <h2 class="sr-only">Login Form</h2><label class="text-center" style="font-size: 20px;">Select the type of transaction according to your requirement</label>
+                <div class="dropright"><input class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="submit" style="margin-left: 51px;margin-top: 24px;" value='Pay securely by &nbsp;&nbsp;>>>' >
+                    <div class="dropdown-menu dropdown-menu-right"
+                        role="menu"><button class="dropdown-item" role="presentation" name="tot" value="neft">NEFT</button><button class="dropdown-item" role="presentation" name="tot" value="rtgs">RTGS</button><button class="dropdown-item" role="presentation" name="tot" value="imps">IMPS</button><button class="dropdown-item" role="presentation"
+                            name="tot" value="card">Debit card</button></div>
+                </div>
+                <header></header>
+            </form>
+        </section>
+    </main>
+    
+{% endblock %}

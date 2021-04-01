@@ -1,0 +1,27 @@
+{% extends "template2.html" %}
+{% block log %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="border: 0px;padding-top: 40px;padding-bottom: 0px;height: 130px;margin-top: 34px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;margin-top: 0px;height: 76px;color: rgb(164,8,8);">&nbsp;transaction success!!!</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <p class="text-center" style="display: block;font-size: 25px;margin-bottom: 100px;">Your transaction is success. You can see statements for further information.<br></p>
+    </div>
+    <div style="height: 277px;margin-top: 18px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="height: 181px;margin-left: 197px;">
+                    <p class="text-center" style="font-size: 20px;height: 109px;"><i class="la la-users" style="font-size: 40px;margin-bottom: 10px;"></i><br>Click here to navigate to dashboard<br><br></p><a class="btn btn-primary text-center" role="button" style="margin-left: 70px;margin-top: 0px;width: 153px;"
+                        href="{{ dash_url }}">Dashboard</a></div>
+                <div class="col-md-4">
+                    <p class="text-center" style="font-size: 20px;height: 109px;"><i class="icon-logout" style="font-size: 40px;margin-bottom: 10px;"></i><br>Click here to log out from your account<br><br><br></p><a class="btn btn-primary text-center" role="button" style="margin-left: 90px;margin-top: -10px;width: 153px;background-color: rgb(255,14,14);"
+                        href="index.html">Log out</a></div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

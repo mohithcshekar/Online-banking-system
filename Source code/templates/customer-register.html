@@ -1,0 +1,38 @@
+{% extends "template1.html" %}
+{% block wlog %}
+    <main class="page lanidng-page"></main>
+    <div class="contact-clean">
+        <form method="post" style="height: 1279px;width: 637px;margin-right: 356.8;">
+            <h2 class="text-center">New Customer Registration</h2><label style="font-size: 20px;"><strong>Personal Information</strong></label><label style="display: block;margin: -1px;">Customer ID (Verified)</label>
+            <p style="width: 400px;border: 1px solid #b2b2b2;height: 42px;padding: 5px;padding-left: 5px;margin-bottom: 5px;">cust_id</p><label style="margin: -1px;">First Name</label>
+            <div class="form-group" style="margin-bottom: 10px;">
+                <p style="width: 400px;border: 1px solid #b2b2b2;height: 42px;padding: 5px;padding-left: 5px;margin-bottom: 1px;">{{ f_name }}</p>
+            </div><label style="margin: -1px;">Last Name</label>
+            <p style="width: 400px;border: 1px solid #b2b2b2;height: 42px;padding: 5px;padding-left: 5px;margin-bottom: 5px;">{{ l_name }}<br><br></p><label style="margin: -1px;">Place</label>
+            <p style="width: 400px;border: 1px solid #b2b2b2;height: 42px;padding: 5px;padding-left: 5px;margin-bottom: 5px;">{{ place }}</p><label style="margin: -1px;">Mobile Number</label>
+            <p style="width: 400px;border: 1px solid #b2b2b2;height: 42px;padding: 5px;padding-left: 5px;margin-bottom: 5px;">{{ mob_no }}</p><label style="margin: -1px;">Email-ID</label>
+            <p style="width: 400px;border: 1px solid #b2b2b2;height: 42px;padding: 5px;padding-left: 5px;margin-bottom: 5px;">{{ email }}</p><label style="margin: -1px;">Password</label><input class="form-control" type="password" placeholder="Password" style="padding: 6px 12px;margin-bottom: 10px;" required="" name="passwd"><label style="margin: -1px;">Retype Password</label>
+            <input
+                class="form-control" type="password" placeholder="Confirm Password" style="padding: 6px 12px;" required=""><label style="font-size: 20px;margin-top: 20px;margin-bottom: 13px;"><strong>Debit card details&nbsp;</strong></label><label style="display: block;margin: -1px;">Debit Card Number</label><input class="form-control" type="number" style="margin-bottom: 10px;"
+                    placeholder="Debit card number(XXXX-XXXX-XXXX-XXXX)" required="" name="card_no"><label style="margin: -1px;">Expire Date</label><input class="form-control" type="date" style="margin-bottom: 10px;" required="" name="expire_date">
+                <label
+                    style="margin: -1px;">CVV</label><input class="form-control" type="number" style="margin-bottom: 10px;" placeholder="CVV (3 Digits)" required="" name="cvv"><label style="margin: -1px;">PIN</label><input class="form-control" type="number" placeholder="Pin (4 Digit)"
+                        min="4" required="" name="pin">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" style="margin-top: 39px;" required=""><label class="form-check-label" for="formCheck-1" style="margin-top: 32px;margin-right: 7px;">Accept terms and conditions before proceeding</label></div>
+                    <div><a class="btn btn-primary btn-lg" role="button" data-toggle="modal" href="#myModal" style="margin-top: 28px;">Submit</a>
+                        <div class="modal fade" role="dialog" tabindex="-1" id="myModal">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4>Registrtion successfull</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                    <div class="modal-body">
+                                        <p class="text-center text-muted">Your registration is success. Now you can login with your ID and password</p>
+                                    </div>
+                                    <div class="modal-footer"><input class="btn btn-primary" type="submit" href="customer-login.html" value="Login page"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </form>
+    </div>
+    {% endblock %}

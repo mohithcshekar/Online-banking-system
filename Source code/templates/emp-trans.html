@@ -1,0 +1,18 @@
+{% extends "template2.html" %}
+{% block log %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">transaction. pay securely</h2>
+                </div>
+            </div>
+            <form style="margin-bottom: 50px;" method="POST"><label>Name of the&nbsp;beneficiary</label><input class="form-control" type="text" style="margin-bottom: 30px;" required="" name="trans_to_name"><label>From account number</label><input class="form-control" type="text" style="margin-bottom: 30px;"
+                    required="" name="acc_no"><label>To account number</label><input class="form-control" type="text" style="margin-bottom: 30px;" required="" name="trans_to_acc"><label>Type of transaction</label>
+                <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" name="tot" value="NEFT"><label class="form-check-label" for="formCheck-1">NEFT</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2" name="tot" value="RTGS"><label class="form-check-label" for="formCheck-2">RTGS</label></div>
+                <div class="form-check" style="margin: 0px;margin-bottom: 30px;"><input class="form-check-input" type="radio" id="formCheck-2" value="IMPS" name="tot"><label class="form-check-label" for="formCheck-2">IMPS</label></div><label>Amount</label><input class="form-control" type="text" style="margin-bottom: 30px;"
+                    required="" name="amt"><label>Any remarks</label><input class="form-control" type="text" style="margin-bottom: 30px;" name="trans_remarks"><input class="btn btn-primary" role="button" style="font-size: 18px;margin-left: 181px;width: 203px;color: #fff;" type="submit" value='Pay&nbsp;securely&nbsp;&nbsp;' ></form>
+        </section>
+    </main>
+    {% endblock %}

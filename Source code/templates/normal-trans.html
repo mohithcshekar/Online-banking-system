@@ -1,0 +1,19 @@
+{% extends "template2.html" %}
+{% block log %}
+
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">{{ tot }} transaction. pay securely</h2>
+                </div>
+            </div>
+            <form style="margin-bottom: 50px;" method="post"><label>Name of the&nbsp;beneficiary</label><input class="form-control" type="text" style="margin-bottom: 30px;" required="" name="trans_to_name"><label>To account number</label><input class="form-control" type="text" style="margin-bottom: 30px;"
+                    required="" name="trans_to_acc"><label>Confirm To&nbsp; account number</label><input class="form-control" type="text" style="margin-bottom: 30px;" required=""><label>IFSC code<br></label><input class="form-control" type="text" style="margin-bottom: 30px;"
+                    required="" name="trans_ifsc"><label>Amount</label><input class="form-control" type="text" style="margin-bottom: 30px;" required="" name="trans_amt"><label>Mobile No of the remitter</label><input class="form-control" type="text" style="margin-bottom: 30px;" required="" name="trans_mob_no">
+                    <label>Information to sent</label><input class="form-control" type="text"
+                    style="margin-bottom: 30px;" name="trans_remarks"><button class="btn btn-primary" role="button" style="font-size: 18px;margin-left: 181px;width: 203px;color: #fff;" type="submit" href="http://google.com1">&nbsp;&nbsp; Pay&nbsp;securely<i class="typcn typcn-arrow-right-outline"></i></button>
+                </form>
+        </section>
+    </main>
+    {% endblock %}

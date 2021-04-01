@@ -1,0 +1,28 @@
+{% extends "template2.html" %}
+{% block log %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">close cusotmer account permanently</h2>
+                </div>
+            </div>
+            <form method="post" style="width: 375px;margin-bottom: 100px;">
+                <label class="text-center" style="width: 268px;margin-bottom: 0px;font-size: 20px;">Enter the customer number</label>
+                <div class="form-group"><input class="form-control" type="text" required="" name="cus_no" style="margin-bottom: 0px;">  </div>
+
+                <label class="text-center" style="width: 268px;margin-bottom: 0px;font-size: 20px;">Reason for closing the account</label>
+                <div class="form-group"><input class="form-control" type="text" required="" name="reason"></div>
+
+
+
+
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" required=""><label class="form-check-label" for="formCheck-1" style="color: #ff0000;margin-bottom: 10px;">I promise that the customer as the consent that his/her account will be permanently deleted</label></div>
+                <div
+                    class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" required=""><label class="form-check-label" for="formCheck-1" style="color: #ff0000;">I confirm that the account is being deleted on the physical presence of customer&nbsp;</label></div>
+                    <div
+                        class="form-group"><input class="btn btn-primary btn-block" type="submit" style="margin-bottom: 1px;margin-top: 20px;" value="Delete account"></div>
+            </form>
+        </section>
+    </main>
+    {% endblock %}

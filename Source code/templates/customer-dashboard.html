@@ -1,0 +1,57 @@
+{% extends "template2.html" %}
+{% block log %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="border-bottom: 0px;padding-top: 40px;padding-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">WElcome&nbsp;</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div style="margin-bottom: 56px;height: 322px;">
+        <div class="container">
+            <div class="row" style="height: 200px;">
+                <div class="col-md-6" style="border: 4px solid #8ed2ff;display: inline-block;height: 300px;margin-left: 0px;margin-right: 0px;padding-right: 20px;padding-left: 20px;">
+                    <div></div>
+                    <h1 class="text-center" style="font-size: 35px;margin-bottom: 15px;margin-top: 10px;margin-left: 0px;">Personal Details</h1>
+                    <fieldset></fieldset>
+                    <fieldset>
+                        <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">First Name&nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ f_name }}</span></legend>
+                        <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">LastName&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ l_name }}</span></legend>
+                        <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">Place&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ place }}</span></legend>
+                        <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">UID No&nbsp;&nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ uid }}</span></legend>
+                        <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;margin-right: px;width: 136px;">MobileNo&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ mob_no }}</span></legend>
+                        <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">Email ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ email}}</span></legend>
+                    </fieldset>
+                </div>
+                <div class="col-md-6" style="border: 4px solid #8ed2ff;display: inline-block;height: 300px;margin-right: 0px;border-left: 0px;padding-left: 20px;">
+                    <div></div>
+                    <h1 class="text-center" style="font-size: 35px;margin-bottom: 15px;margin-top: 10px;">Bank Account Details</h1>
+                    <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">Cus No&nbsp;&nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ cust_id }}</span></legend>
+                    <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">Acc No&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ acc_no }}</span></legend>
+                    <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">Balance&nbsp; &nbsp; &nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ balance }}</span></legend>
+                    <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">Branch&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ br_code }}</span></legend>
+                    <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">Branch Place&nbsp; &nbsp;&nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: {{ place }}</span></legend>
+                <!--    <legend style="padding: 0px;padding-top: 0px;margin-bottom: 5px;/*border: 2px solid #8ed2ff;*/height: 30px;padding-bottom: 0px;font-size: 18px;padding-left: 5px;"><label style="font-size: 20px;width: 136px;">Debit Card No&nbsp;</label><span style="margin-left: 5px;font-size: 20px;">: Text</span></legend>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom: 30px;height: 197px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="height: 180px;border: 2px solid #8ed2ff;">
+                    <h1 class="text-center" style="font-size: 25px;padding-top: 14px;"><i class="far fa-newspaper" style="font-size: 40px;"></i><br>Statements or Transaction status</h1><a class="btn btn-primary" type="button" style="margin-left: 113px;margin-top: 4px;" href="statements.html">Statements</a></div>
+                <div class="col-md-4"
+                    style="border: 2px solid #8ed2ff;">
+                    <header></header>
+                    <h1 class="text-center" style="height: 72px;font-size: 25px;padding-top: 27px;"><i class="la la-money" style="font-size: 40px;"></i><br>Make Transaction</h1><a class="btn btn-primary" type="submit" style="margin-left: 123px;margin-top: 45px;width: 113px;" href="tot.html">Transact</a></div>
+                <div class="col-md-4" style="border: 2px solid #8ed2ff;border-left: 0px;">
+                    <header></header>
+                    <h1 class="text-center" style="height: 72px;font-size: 25px;padding-top: 30px;"><i class="icon-settings" style="font-size: 40px;"></i><br>Edit you profile</h1><a class="btn btn-primary" type="button" style="margin-left: 123px;width: 108px;margin-top: 48px;" href="customer-register.html">Edit</a></div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+    {% endblock %}

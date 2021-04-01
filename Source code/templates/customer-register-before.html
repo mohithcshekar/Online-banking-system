@@ -1,0 +1,19 @@
+{% extends "template1.html" %}
+{% block wlog %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;">
+            <div class="container" style="padding: 0px;">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">Before Registering confirm your customer-ID and account number provided by bank<br><br></h2>
+                </div>
+            </div>
+            <form method="post" style="width: 375px;margin-bottom: 100px;padding: 50px;padding-top: 27px;">
+                <h2 class="sr-only">Login Form</h2>
+                <p class="text-center"></p>
+                <p class="text-center" style="font-size: 18px;margin-left: 75px;margin-bottom: 29px;"><strong>Confirm your ID</strong></p>
+                <header></header>
+                <div class="form-group"><input class="form-control" type="text" name="cust_id" placeholder="Customer ID" style="margin-bottom: 29px;"></div><input class="form-control" type="text" style="margin-bottom: 20px;" name="acc_no" placeholder="Account Number">
+                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Confirm</button></div><a class="forgot" style="display: block;margin-top: 20px;" href="customer-login.html">Return&nbsp; to login page</a></form>
+        </section>
+    </main>
+    {% endblock %}

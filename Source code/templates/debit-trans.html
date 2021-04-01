@@ -1,0 +1,22 @@
+{% extends "template2.html" %}
+{% block log %}
+
+    <main class="page lanidng-page">
+        <section class="portfolio-block skills" style="padding-top: 40px;padding-bottom: 0px;">
+            <div class="container">
+                <div class="heading">
+                    <h2 style="margin-bottom: 0px;">Online transaction using debit card. pay securely</h2>
+                </div>
+            </div>
+            <div class="container">
+                <form method="post"  ><label>Confirm your debit card</label><input class="form-control" type="text" style="margin-bottom: 30px;" name="trans_card"><label>Expire date</label><input class="form-control" type="date" style="margin-bottom: 30px;" name="trans_expiry"><label>Confirm CVV</label>
+                    <input
+                        class="form-control" type="text" style="margin-bottom: 30px;" name="trans_cvv"><label>PIN</label><input class="form-control" type="text" style="margin-bottom: 30px;" name="trans_pin"><label>Name of the&nbsp;beneficiary<br></label><input class="form-control" type="text" style="margin-bottom: 30px;" name="trans_to_name"><label>To account number</label>
+                        <input
+                            class="form-control" type="text" style="margin-bottom: 30px;" name="trans_to_acc"><label>Transaction amount in RS<br></label><input class="form-control" type="text" style="margin-bottom: 30px;" name="trans_amt"><label>Mobile number of the&nbsp; beneficiary<br></label><input class="form-control" type="text" style="margin-bottom: 30px;" name="trans_mob_no">
+                            <label>Any information to sent</label><input class="form-control" type="text" style="margin-bottom: 30px;"
+                                name="trans_remarks"><input class="btn btn-primary" role="button" style="width: 150px;margin-left: 208px;" type="submit" value="Transact"></form>
+            </div>
+        </section>
+    </main>
+    {% endblock %}
