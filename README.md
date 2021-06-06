@@ -24,7 +24,7 @@ Before starting the project please donwload the necessary softwares which are li
 * Etc...
 
 ## Usage 
-After the succefull installation of the above mentioned software. You can run the program. For the detailed documentaion on how to use this source code you can request me through mail ``mohith.chandrashekar@gmail.com``
+After the succefull installation of the above mentioned software. You can run the program. For the detailed documentaion on how to use this source code you can request me through mail.
 
 ## Screenshots
 ### Customer Dashboard
